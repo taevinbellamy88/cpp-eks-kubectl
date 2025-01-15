@@ -18,3 +18,5 @@ build/
 *.tlog
 *.lastbuildstate
 *.FileListAbsolute.txt
+.sh
+.env
