@@ -15,7 +15,6 @@ WORKDIR /build
 
 # Copy the source files to the container
 COPY ./src /build/src
-COPY ./index.html /app/
 COPY ./CppKubernetesApp /build/CppKubernetesApp
 
 # Run the build process
@@ -40,6 +39,9 @@ WORKDIR /app
 
 # Copy the binary from the builder stage
 COPY --from=builder /build/build/CppKubernetesApp /app/
+
+# Copy the index.html file to the /app directory
+COPY ./CppKubernetesApp/index.html /app/
 
 # Add a non-root user for security
 RUN useradd --create-home --shell /bin/bash appuser && \
