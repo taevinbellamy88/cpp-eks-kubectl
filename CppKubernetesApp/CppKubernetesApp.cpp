@@ -13,7 +13,19 @@ int main() {
 
         std::cout << "Server is listening on port 8080...\n";
 
-        acceptor.accept(socket);
+        boost::system::error_code ec;
+        while (true) {
+    try {
+        acceptor.accept(socket, ec);
+        if (ec) {
+            std::cerr << "Error accepting connection: " << ec.message() << "\n";
+            return 1;
+        }      
+        }
+        catch (const std::exception& e) {
+        std::cerr << "Error: " << e.what() << std::endl;
+    }
+} 
         boost::beast::flat_buffer buffer;
 
         boost::beast::http::request<boost::beast::http::string_body> request;
