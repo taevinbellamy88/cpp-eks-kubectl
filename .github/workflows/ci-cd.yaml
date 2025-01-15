@@ -40,7 +40,7 @@ jobs:
 
     # Push Docker Image to Docker Hub
     - name: Push Docker Image
-      run: docker push -t coderxhemi419/cpp-kubernetes-app:latest
+      run: docker push coderxhemi419/cpp-kubernetes-app:latest
 
     # Configure kubectl with AWS EKS
     - name: Configure kubectl
