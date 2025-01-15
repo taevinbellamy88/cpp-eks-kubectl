@@ -20,11 +20,12 @@ jobs:
       run: |
         mkdir -p build
         cd build
-        cmake ..
+        cmake ../src
         make
 
     - name: Build Docker Image
       run: |
+        cd build
         docker build -t cpp-kubernetes-app:latest .
 
     - name: Login to Docker Hub

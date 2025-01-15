@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cpp-kubernetes-app
+  labels:
+    app: cpp-kubernetes-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: cpp-kubernetes-app
+  template:
+    metadata:
+      labels:
+        app: cpp-kubernetes-app
+    spec:
+      containers:
+      - name: cpp-kubernetes-app
+        image: coderxhemi419/cpp-kubernetes-app-linux:latest
+        ports:
+        - containerPort: 8080
