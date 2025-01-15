@@ -15,6 +15,7 @@ WORKDIR /build
 
 # Copy the source files to the container
 COPY ./src /build/src
+COPY ./index.html /app/
 COPY ./CppKubernetesApp /build/CppKubernetesApp
 
 # Run the build process
