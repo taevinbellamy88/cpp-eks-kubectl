@@ -1,22 +1,142 @@
+# Build directories
 build/
+x64/
+bin/
+obj/
+Debug/
+Release/
+
+# Logs and temporary files
 *.log
+*.tmp
+*.temp
+*.cache
+
+# Object files
+*.o
+*.obj
+
+# Compiled library files
+*.so
+*.so.*
+*.dll
+*.dylib
+*.a
+*.lib
+*.la
+
+# Executable files
 *.exe
+*.out
+*.app
+
+# Debug and profiling files
 *.pdb
 *.ilk
 *.idb
-build/
-x64/
-*.log
-*.pdb
-*.ilk
-x64/
-build/
-*.log
-*.obj
-*.pdb
-*.ilk
 *.tlog
 *.lastbuildstate
-*.FileListAbsolute.txt
-.sh
+
+# Dependency files
+*.d
+*.dSYM/
+
+# Temporary/generated files
+*.swp
+*.swo
+*~
+*.bak
+*.old
+
+# Editor/IDE settings
+*.vscode/
+.idea/
+*.DS_Store
+*.swp
+*.vs/
+*.ncb
+*.suo
+*.user
+*.opendb
+*.VC.db
+
+# CMake files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# CodeBlocks
+*.layout
+
+# Qt Creator
+*.pro.user
+*.pro.user.*
+*.qmake.stash
+*.qmlc
+*.jsc
+*.qrc
+*.moc
+
+# Visual Studio
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.sln
+*.ipch
+
+# Clang/GCC toolchains
+*.gcda
+*.gcno
+*.gcov
+*.dwo
+
+# Generated files
+*.i
+*.ii
+*.s
+*.lst
+
+# Test artifacts
+test-results/
+tests/
+*.gcda
+*.gcno
+
+# Documentation
+docs/
+*.html
+*.pdf
+*.docx
+*.pptx
+*.tex
+*.aux
+*.log
+*.toc
+
+# Package files
+*.tar
+*.gz
+*.bz2
+*.7z
+*.zip
+*.tgz
+*.rar
+*.deb
+*.rpm
+*.dmg
+*.pkg
+
+# Shell scripts
+*.sh
+*.bat
+
+# Environment/configuration files
 .env
+.env.*
+*.config
+*.ini
+
+# Miscellaneous
+Thumbs.db
+*.stackdump
