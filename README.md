@@ -1,0 +1,1 @@
+[![CI/CD Pipeline](https://github.com/taevinbellamy88/cpp-eks-kubectl/actions/workflows/ci-cd.yaml/badge.svg)](https://github.com/taevinbellamy88/cpp-eks-kubectl/actions/workflows/ci-cd.yaml)
