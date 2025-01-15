@@ -4,3 +4,17 @@ build/
 *.pdb
 *.ilk
 *.idb
+build/
+x64/
+*.log
+*.pdb
+*.ilk
+x64/
+build/
+*.log
+*.obj
+*.pdb
+*.ilk
+*.tlog
+*.lastbuildstate
+*.FileListAbsolute.txt

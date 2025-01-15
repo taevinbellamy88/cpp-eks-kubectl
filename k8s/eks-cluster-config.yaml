@@ -1,0 +1,16 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: cpp-kubernetes-app-cluster
+  region: us-west-2
+
+nodeGroups:
+  - name: app-node-group
+    instanceType: t3.medium
+    desiredCapacity: 2
+    minSize: 1
+    maxSize: 3
+    ssh:
+      allow: true
+      publicKeyName: eks-key
