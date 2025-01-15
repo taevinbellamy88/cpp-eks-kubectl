@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: cpp-kubernetes-app
-        image: coderxhemi419/cpp-kubernetes-app-linux:latest
+        image: coderxhemi419/cpp-kubernetes-app:latest
         ports:
         - containerPort: 8080
