@@ -29,7 +29,7 @@ jobs:
     # Build Docker Image
     - name: Build Docker Image
       run: |
-        docker build -t cpp-kubernetes-app:latest -f ./Dockerfile .
+        docker build -t -t coderxhemi419/cpp-kubernetes-app:latest -f ./Dockerfile .
 
     # Login to Docker Hub
     - name: Login to Docker Hub
@@ -40,7 +40,7 @@ jobs:
 
     # Push Docker Image to Docker Hub
     - name: Push Docker Image
-      run: docker push cpp-kubernetes-app:latest
+      run: docker push -t coderxhemi419/cpp-kubernetes-app:latest
 
     # Configure kubectl with AWS EKS
     - name: Configure kubectl
